@@ -29,6 +29,8 @@ public class ArrowScript : MonoBehaviour {
     public void OnTriggerEnter(Collider collider){
         if (collider.tag == "Enemy"){
             Damage(collider.transform);
+            Debug.Log("Damaging enemy");
+            Destroy(gameObject);
         } else {
             Destroy(gameObject);
         }

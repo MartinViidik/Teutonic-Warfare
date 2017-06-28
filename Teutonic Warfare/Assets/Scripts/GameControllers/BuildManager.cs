@@ -11,6 +11,7 @@ public class BuildManager : MonoBehaviour {
     public NodeUI NodeUI;
 
     public GameObject buildEffect;
+    public GameObject buildNodes;
 
     public GameObject ArcherPrefab;
     public GameObject CrossbowPrefab;
@@ -25,6 +26,10 @@ public class BuildManager : MonoBehaviour {
     public void SelectBuildingToBuild(Constructables Building){
         buildingToBuild = Building;
         SelectedNode = null;
+    }
+
+    public Constructables GetBuildingToBuild(){
+        return buildingToBuild;
     }
 
     public void SelectNode(NodeScript node){
@@ -42,24 +47,6 @@ public class BuildManager : MonoBehaviour {
     public void DeselectNode(){
         SelectedNode = null;
         NodeUI.Hide();
-    }
-
-    public void BuildBuildingOn(NodeScript node){
-
-        if(PlayerStats.cash < buildingToBuild.cost){
-            Debug.Log("Too poor");
-            return;
-        }
-
-        PlayerStats.cash -= buildingToBuild.cost;
-        PlayerStats.BuildingsPurchased++;
-        Debug.Log(buildingToBuild + " built:" + " " + PlayerStats.cash + " left");
-
-        GameObject Building = (GameObject)Instantiate(buildingToBuild.prefab, node.GetBuildPosition(), Quaternion.identity);
-        node.Building = Building;
-
-        GameObject Effect = (GameObject)Instantiate(buildEffect, node.GetBuildPosition(), Quaternion.identity);
-        Destroy(Effect, 4f);
     }
 
     public void getComponents(){

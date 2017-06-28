@@ -9,4 +9,7 @@ public class Constructables{
     public GameObject prefab;
     public int cost;
 
+    public GameObject upgradedPrefab;
+    public int upgradeCost;
+
 }
