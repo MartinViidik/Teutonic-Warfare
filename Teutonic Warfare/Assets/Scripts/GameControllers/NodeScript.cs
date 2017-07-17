@@ -68,6 +68,22 @@ public class NodeScript : MonoBehaviour {
         Destroy(Effect, 4f);
     }
 
+    public void RotateBuilding(){
+        Building.transform.Rotate(0, 90, 0);
+        Debug.Log("Building rotated");
+    }
+
+    public void SellBuilding(){
+        PlayerStats.cash += BuildingBlueprint.sellprice();
+        Destroy(Building);
+        BuildingBlueprint = null;
+
+        GameObject Effect = (GameObject)Instantiate(buildManager.buildEffect, GetBuildPosition(), Quaternion.identity);
+        Destroy(Effect, 4f);
+
+        Debug.Log("Building sold");
+    }
+
     void OnMouseDown(){
         if (EventSystem.current.IsPointerOverGameObject())
             return;

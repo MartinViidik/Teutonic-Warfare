@@ -31,8 +31,6 @@ public class ArrowScript : MonoBehaviour {
             Damage(collider.transform);
             Debug.Log("Damaging enemy");
             Destroy(gameObject);
-        } else {
-            Destroy(gameObject);
         }
     }
 
@@ -43,4 +41,5 @@ public class ArrowScript : MonoBehaviour {
         }
 
     }
+
 }

@@ -4,6 +4,16 @@
     <assembly>
       <name>UnityEngine.TestRunner</name>
     </assembly>
+    <member name="?:UnityEngine.TestTools.IMonoBehaviourTest">
+      <summary>
+        <para>A MonoBehaviour test needs to implement this interface.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.TestTools.IMonoBehaviourTest.IsTestFinished">
+      <summary>
+        <para>Indicates when the test is considered finished.</para>
+      </summary>
+    </member>
     <member name="?:UnityEngine.TestTools.IPrebuildSetup">
       <summary>
         <para>Interface for the method that implements the prebuild step.</para>
@@ -17,6 +27,11 @@
     <member name="T:UnityEngine.TestTools.LogAssert">
       <summary>
         <para>LogAssert allows you to expect Unity log messages that would normally cause the test to fail.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.TestTools.LogAssert.ignoreFailingMessages">
+      <summary>
+        <para>Set this property to true to prevent unexpected error log messages from triggering an assertion. This property is set to false by default.</para>
       </summary>
     </member>
     <member name="M:UnityEngine.TestTools.LogAssert.Expect(UnityEngine.LogType,System.String)">
@@ -38,6 +53,11 @@
         <para>Triggers an assert if any logs have been received that were not expected. Returns without asserting if all logs received so far have been registered as expected.</para>
       </summary>
     </member>
+    <member name="T:UnityEngine.TestTools.MonoBehaviourTest`1">
+      <summary>
+        <para>Wrapper for running tests that are imlpemented as MonoBehaviours.</para>
+      </summary>
+    </member>
     <member name="T:UnityEngine.TestTools.PrebuildSetupAttribute">
       <summary>
         <para>Allows to define a setup method for the test that will be invoked before the test run is started.</para>
@@ -45,7 +65,7 @@
     </member>
     <member name="M:UnityEngine.TestTools.PrebuildSetupAttribute.#ctor(System.Type)">
       <summary>
-        <para></para>
+        <para>Points to a class that imlpements TestTools.IPrebuildSetup. The method from TestTools.IPrebuildSetup will be executed before the test run is initiated.</para>
       </summary>
       <param name="setupClass">Type of the class implementing TestTools.IPrebuildSetup.</param>
     </member>
@@ -56,14 +76,18 @@
     </member>
     <member name="T:UnityEngine.TestTools.UnityPlatformAttribute">
       <summary>
-        <para>Specify on which platform the test should run on.</para>
+        <para>For specifying platforms to run on.</para>
       </summary>
     </member>
-    <member name="M:UnityEngine.TestTools.UnityPlatformAttribute.#ctor(UnityEngine.TestTools.TestPlatform[])">
+    <member name="P:UnityEngine.TestTools.UnityPlatformAttribute.exclude">
       <summary>
-        <para>Paltform the test can run on.</para>
+        <para>Excluded platforms.</para>
       </summary>
-      <param name="includePlatforms"></param>
+    </member>
+    <member name="P:UnityEngine.TestTools.UnityPlatformAttribute.include">
+      <summary>
+        <para>Included platforms.</para>
+      </summary>
     </member>
     <member name="T:UnityEngine.TestTools.UnityTestAttribute">
       <summary>

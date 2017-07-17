@@ -21,14 +21,13 @@ public class NodeUI : MonoBehaviour {
         node.UpgradeBuilding();
         BuildManager.instance.DeselectNode();
     }
-
-    public void Rotate(){
-        node.transform.Rotate(0, 90, 0);
-        Debug.Log("Node rotated");
+    public void Sell(){
+        node.SellBuilding();
+        BuildManager.instance.DeselectNode();
     }
 
-    public void Sell(){
-        Debug.Log("Building sold");
+    public void Rotate(){
+        node.RotateBuilding();
     }
 
     public void Hide(){

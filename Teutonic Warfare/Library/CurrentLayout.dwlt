@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 6}
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -42,10 +42,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 681, y: 342}
-  m_MaxSize: {x: 12006, y: 8042}
+  m_MinSize: {x: 681, y: 492}
+  m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 50
+  controlID: 98
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -114,15 +114,15 @@ MonoBehaviour:
     y: 578
     width: 1533
     height: 369
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 20}
+  m_MinSize: {x: 232, y: 271}
+  m_MaxSize: {x: 10002, y: 10021}
+  m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
   - {fileID: 20}
   - {fileID: 13}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,7 +144,7 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 997
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &7
 MonoBehaviour:
@@ -207,10 +207,10 @@ MonoBehaviour:
     y: 0
     width: 1533
     height: 947
-  m_MinSize: {x: 404, y: 342}
-  m_MaxSize: {x: 8004, y: 8042}
+  m_MinSize: {x: 404, y: 492}
+  m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 51
+  controlID: 11
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -234,7 +234,7 @@ MonoBehaviour:
   m_MinSize: {x: 404, y: 221}
   m_MaxSize: {x: 8004, y: 4021}
   vertical: 0
-  controlID: 52
+  controlID: 12
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -362,7 +362,7 @@ MonoBehaviour:
     x: 381
     y: 92
     width: 1150
-    height: 552
+    height: 557
 --- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -395,24 +395,25 @@ MonoBehaviour:
     m_AssetLabels: []
     m_AssetBundleNames: []
     m_VersionControlStates: []
+    m_SoftLockControlStates: []
     m_ReferencingInstanceIDs: 
     m_ScenePaths: []
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Prefabs
+    - Assets/Scripts/GameControllers
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Prefabs
+  - Assets/Scripts/GameControllers
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\viila\Documents\Teutonic Warfare
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: e6240000
-    m_LastClickedID: 9446
-    m_ExpandedIDs: 00000000be2400001c2500005425000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 10.6834545}
+    m_SelectedIDs: 7e260000
+    m_LastClickedID: 9854
+    m_ExpandedIDs: 000000002e2600006026000072260000862600008e26000098260000a226000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -440,7 +441,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000be2400001c25000054250000
+    m_ExpandedIDs: 000000002e2600006026000072260000862600008e26000098260000a2260000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -465,10 +466,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 24250000
-    m_LastClickedInstanceID: 9508
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: 22250000
+    m_ExpandedInstanceIDs: 222500000a270000e6260000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -556,9 +557,9 @@ MonoBehaviour:
     height: 557
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 06260000
-    m_LastClickedID: 9734
-    m_ExpandedIDs: 6001ffffdcfbffff00000000c4250000e8250000d2260000242700002a270000f0270000
+    m_SelectedIDs: 62270000
+    m_LastClickedID: 10082
+    m_ExpandedIDs: 1afcffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -608,14 +609,14 @@ MonoBehaviour:
     width: 1150
     height: 557
   m_SceneLighting: 1
-  lastFramingTime: 10197.371915891626
+  lastFramingTime: 6978.553378271004
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -15.264389, y: 2.4504547, z: 11.073559}
+    m_Target: {x: -15.536016, y: 9.410149, z: 6.7295227}
     speed: 2
-    m_Value: {x: -15.264389, y: 2.4504547, z: 11.073559}
+    m_Value: {x: -15.536016, y: 9.410149, z: 6.7295227}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -638,18 +639,18 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.18228042, y: -0.0073701856, z: 0.0013663407, w: -0.9832198}
+    m_Target: {x: -0.0007123624, y: -0.8012701, z: -0.0009531635, w: 0.59830534}
     speed: 2
-    m_Value: {x: -0.18228042, y: -0.0073701856, z: 0.0013663407, w: -0.9832198}
+    m_Value: {x: -0.0007123608, y: -0.80126834, z: -0.00095316133, w: 0.598304}
   m_Size:
-    m_Target: 37.985428
+    m_Target: 75.059296
     speed: 2
-    m_Value: 37.985428
+    m_Value: 75.059296
   m_Ortho:
     m_Target: 0
     speed: 2
     m_Value: 0
-  m_LastSceneViewRotation: {x: 0.08024064, y: -0.9147749, z: 0.22561617, w: 0.32533944}
+  m_LastSceneViewRotation: {x: 0.08561009, y: -0.59252524, z: 0.063530214, w: 0.7984664}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
@@ -724,7 +725,7 @@ MonoBehaviour:
       width: 1252.1554
       height: 587.9686
     m_MinimalGUI: 1
-  m_defaultScale: 1
+  m_defaultScale: 0.9
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
   m_LastWindowPixelSize: {x: 1150, y: 557}

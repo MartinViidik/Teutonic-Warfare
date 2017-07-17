@@ -12,4 +12,6 @@ public class Constructables{
     public GameObject upgradedPrefab;
     public int upgradeCost;
 
+    public int sellprice() { return cost / 2; }
+
 }

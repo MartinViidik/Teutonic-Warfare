@@ -27,7 +27,8 @@ public class ArcherController : MonoBehaviour {
 
     void shootBow(){
         Debug.Log("Shooting");
-        GameObject arrowFlying = (GameObject)Instantiate(arrowPrefab, firePoint.position, firePoint.rotation);
+        GameObject arrowFlying = Instantiate(arrowPrefab, firePoint.position, firePoint.localRotation);
         ArrowScript arrow = arrowFlying.GetComponent<ArrowScript>();
+        Destroy(arrowFlying, 4f);
     }
 }

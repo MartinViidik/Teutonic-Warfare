@@ -8,6 +8,7 @@ public class PlayerStats : MonoBehaviour {
     public static int ArrowsFired;
     public static int EnemiesKilled;
     public static int CashEarned;
+    public static int PowerupsGained;
 
     public static int cash;
     public int startCash = 500;
